@@ -1,32 +1,40 @@
 #SmoochBooth
 **by Quin Kennedy**, created initially during [_Art Hack Day - Larger Than Life_](http://arthackday.net/stockholm/) in Stockholm
 
-![The Kiss](documentation/kiss_md.png)
-![Gentle Touch](documentation/touch_md.png)
-![Some Fun](documentation/fun_md.png)
-![Work Around](documentation/feet_md.png)
-
+[![The Kiss](documentation/kiss_md.png)](documentation/kiss.png)
 
 ###Description
 There are 2 parts to SmoochBooth:
+
 1. A processing app that takes a photo when the spacebar is pressed (which we actuated with a makey makey)
 2. A python script that uploads saved photos to Tumblr
 
+[![Gentle Touch](documentation/touch_md.png)](documentation/touch.png)
+
 The processing app was written to take an HD feed from a webcam, and when the spacebar is pressed it does the following:
+
 1. Turns the screen white to act as a "flash" (a la Photobooth)
 2. Captures the most recent frame from the webcam
 3. Saves the captured frame to disk
 4. Displays the captured frame for ~10 seconds
 
+[![Some Fun](documentation/fun_md.png)](documentation/fun.png)
+
 The python script was written to periodically see if there are new .png files in a specific directory,
 and upload them to Tumblr using Temboo.
 
-![Painting The Hand](documentation/setup_2_md.jpg)
+[![Work Around](documentation/feet_md.png)](documentation/feet.png)
+
+
+
+
+###Setup
+![Painting The Hand](documentation/setup_2_sm.jpg)
 ![Column](documentation/arm_1_sm.jpg)
 ![Panorama](documentation/arm_2_sm.jpg)
 
-###Setup
 In order to set up to use Temboo to post to Tumblr:
+
 1. Go to http://www.tumblr.com/oauth/apps and register an application
 2. Sign up at https://temboo.com/ and download the Python SDK (place it in the root dir of this repo)
 3. Under the 'Library' tab, find 'Tumblr' -> 'OAuth' -> 'InitializeOAuth'
@@ -40,4 +48,4 @@ In order to set up to use Temboo to post to Tumblr:
 
 Now, when you run both the processing App and the python App, when you take a photo, it should save a picture in the App's root directory and then the Python script will pick up that file and use Temboo to post it to Tumblr.
 
-![The Makers](documentation/makers_md.png)
+[![The Makers](documentation/makers_md.png)](documentation/makers.png)
