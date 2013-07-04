@@ -1,6 +1,10 @@
 #SmoochBooth
-**by Quin Kennedy**, created initially during [_Art Hack Day - God Mode_](http://arthackday.net/god_mode/) at 319 Scholes
+**by Quin Kennedy**, created initially during [_Art Hack Day - Larger Than Life_](http://arthackday.net/stockholm/) in Stockholm
 
+![The Kiss](documentation/kiss_md.png)
+![Gentle Touch](documentation/touch_md.png)
+![Some Fun](documentation/fun_md.png)
+![Work Around](documentation/feet_md.png)
 
 
 ###Description
@@ -17,6 +21,10 @@ The processing app was written to take an HD feed from a webcam, and when the sp
 The python script was written to periodically see if there are new .png files in a specific directory,
 and upload them to Tumblr using Temboo.
 
+![Painting The Hand](documentation/setup_2_md.jpg)
+![Column](documentation/arm_1_sm.jpg)
+![Panorama](documentation/arm_2_sm.jpg)
+
 ###Setup
 In order to set up to use Temboo to post to Tumblr:
 1. Go to http://www.tumblr.com/oauth/apps and register an application
@@ -31,3 +39,5 @@ In order to set up to use Temboo to post to Tumblr:
 10. Take all that same info and enter it in the appropriate places for Temboo authentication in temboo_photos.py. Use the AccessToken and AccessTokenSecret that are returned on the 'Finalize..' page.
 
 Now, when you run both the processing App and the python App, when you take a photo, it should save a picture in the App's root directory and then the Python script will pick up that file and use Temboo to post it to Tumblr.
+
+![The Makers](documentation/makers_md.png)
