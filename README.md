@@ -1,5 +1,5 @@
 #SmoochBooth
-**by Quin Kennedy**, created initially during [_Art Hack Day - Larger Than Life_](http://arthackday.net/stockholm/) in Stockholm
+**by Quin Kennedy and [Olof Mathé](http://olofmathe.com/)**, created initially during [_Art Hack Day - Larger Than Life_](http://arthackday.net/stockholm/) in Stockholm
 
 [![The Kiss](documentation/kiss_md.png)](documentation/kiss.png)
 
